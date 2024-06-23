@@ -1,0 +1,21 @@
+<body style="margin-left: 100px;">
+    <h1>Password generator</h1>
+    
+    
+    <form action="{% url 'password' %}" method="">
+        <label for="length">Length:</label>
+        <!-- input type = text | password | date -->
+        <input type="number" id="length" name="length" value="12" min="8" max="20"> 
+        <br> 
+        <label for="uppercase">Uppercase:</label>
+        <input type="checkbox" id="uppercase" name="uppercase" checked>
+        <br>
+        <label for="numbers">Numbers:</label>
+        <input type="checkbox" id="numbers" name="numbers" >
+        <br>
+        <label for="symbols">Symbols:</label>
+        <input type="checkbox" id="symbols" name="symbols" checked>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
